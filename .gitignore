@@ -1,0 +1,5 @@
+.venv/
+__pycache__/
+*.pt
+input.txt
+.DS_Store

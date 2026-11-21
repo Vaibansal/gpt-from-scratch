@@ -1,0 +1,88 @@
+gpt2 on mps: 124.4M parameters
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+338,025 tokens, 3.30 characters per token
+training 124.4M parameters
+step 0: train loss 4.4590, val loss 4.3133 (per character 1.3072) (0.3 min) best
+step 50: train loss 3.5447, val loss 3.4427 (per character 1.0433) (1.6 min) best
+step 100: train loss 3.4698, val loss 3.4075 (per character 1.0326) (2.8 min) best
+step 150: train loss 3.3696, val loss 3.3968 (per character 1.0294) (4.0 min) best
+step 200: train loss 3.2917, val loss 3.4134 (per character 1.0345) (5.2 min)
+step 250: train loss 3.2509, val loss 3.3902 (per character 1.0274) (6.4 min) best
+step 300: train loss 3.2142, val loss 3.3884 (per character 1.0269) (7.6 min) best
+step 350: train loss 3.2018, val loss 3.3890 (per character 1.0271) (8.8 min)
+step 400: train loss 3.1297, val loss 3.3324 (per character 1.0099) (9.9 min) best
+step 450: train loss 3.0751, val loss 3.3121 (per character 1.0037) (11.2 min) best
+step 500: train loss 3.0786, val loss 3.3476 (per character 1.0145) (12.7 min)
+ROMEO:
+I thank God that I can get some respite.
+
+LEONTES:
+Your grace,--
+
+LEONTES:
+I pray you, his majesty, do deliver your thanks.
+
+VOLUMNIA:
+Do so, my lord; and make me good fortune.
+
+LEONTES:
+Say so, my lord.
+
+VOLUMNIA:
+With what hope is in your heart and his will?
+
+LEONTES:
+I think it is not worth a mile to build my house.
+
+VOLUMNIA:
+Do you understand, my lord?
+
+LEONTES:
+I do.
+
+VOLUMNIA:
+That's not the case.
+
+LEONTES:
+I am not the master of your house: it is not worth a mile to build it.
+
+VOLUMNIA:
+I am not the master of your home: it is not worth a mile to build it.
+
+LEONTES:
+I am not the master of your house: it is not worth a mile to build it.
+
+VOLUMNIA:
+I am not the master of your house: it is not worth a mile to build it.
+
+LEONTES:
+I am not the master of your house: it is not worth a mile to build it.
+
+VOLUMNIA:
+It is all the more so, since you have not aught to say,
+to tell me what you think would be our best and most lawful course;
+for your grace to know this is impossible,
+unless you have done it with some hardy oracle.
+
+LEONTES:
+I am the very master of your house!
+
+VOLUMNIA:
+I am the very master of your house!
+
+LEONTES:
+No, do me a favor, my lord; do me a present.
+
+VOLUMNIA:
+You are too dear to my good house, my lord,
+because you have not done it in good faith with respect,
+if possible, to show an unkind disposition of your grace.
+
+LEONTES:
+No, you are too dear to your good house, my lord.
+
+VOLUMNIA:
+No, do me a thing, my lord; have you done it for thy grace,
+by giving
+
+Saved gpt2_shakespeare.pt and sample_gpt2.txt

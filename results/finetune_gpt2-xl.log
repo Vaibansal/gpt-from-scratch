@@ -1,0 +1,35 @@
+gpt2-xl on mps: 1557.6M parameters
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+338,025 tokens, 3.30 characters per token
+training 245.9M parameters
+step 0: train loss 3.9478, val loss 3.9249 (per character 1.1895) (1.0 min) best
+step 50: train loss 3.2699, val loss 3.2417 (per character 0.9824) (6.4 min) best
+step 100: train loss 3.1963, val loss 3.2477 (per character 0.9842) (9.7 min)
+step 150: train loss 3.1628, val loss 3.1179 (per character 0.9449) (22.2 min) best
+step 200: train loss 3.1945, val loss 3.0807 (per character 0.9336) (51.1 min) best
+step 250: train loss 3.0437, val loss 3.0491 (per character 0.9240) (56.3 min) best
+step 300: train loss 3.0152, val loss 3.1530 (per character 0.9555) (61.7 min)
+Traceback (most recent call last):
+  File "/Users/vaibhavb/Downloads/GPT/finetune_gpt2.py", line 264, in <module>
+    main()
+  File "/Users/vaibhavb/Downloads/GPT/finetune_gpt2.py", line 250, in main
+    text_out = sample(model, args.prompt, 500)
+  File "/Users/vaibhavb/Downloads/GPT/finetune_gpt2.py", line 259, in sample
+    out = model.generate(idx, num_tokens, temperature=args.temperature, top_k=args.top_k)
+  File "/Users/vaibhavb/Downloads/GPT/.venv/lib/python3.9/site-packages/torch/utils/_contextlib.py", line 120, in decorate_context
+    return func(*args, **kwargs)
+  File "/Users/vaibhavb/Downloads/GPT/finetune_gpt2.py", line 140, in generate
+    logits, _ = self(idx[:, -N_POSITIONS:])
+  File "/Users/vaibhavb/Downloads/GPT/.venv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/vaibhavb/Downloads/GPT/.venv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/vaibhavb/Downloads/GPT/finetune_gpt2.py", line 131, in forward
+    logits = self.lm_head(self.ln_f(x))
+  File "/Users/vaibhavb/Downloads/GPT/.venv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/Users/vaibhavb/Downloads/GPT/.venv/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/Users/vaibhavb/Downloads/GPT/.venv/lib/python3.9/site-packages/torch/nn/modules/linear.py", line 125, in forward
+    return F.linear(input, self.weight, self.bias)
+RuntimeError: MPS backend out of memory (MPS allocated: 22.02 GiB, other allocations: 8.09 GiB, max allowed: 30.19 GiB). Tried to allocate 95.47 MiB on private pool. Use PYTORCH_MPS_HIGH_WATERMARK_RATIO=0.0 to disable upper limit for memory allocations (may cause system failure).
